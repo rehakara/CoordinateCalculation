@@ -11,7 +11,7 @@ namespace Dominos.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             var sql = new StringBuilder();
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 30000000; i++)
             {
                 var source_latitude = RandomDouble(36.000000, 42.000000).ToGBString();
                 var source_longitude = RandomDouble(26.000000, 45.000000).ToGBString();
